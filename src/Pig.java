@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Pig {
 
     /*
@@ -26,6 +28,15 @@ public class Pig {
 
     // Implement your solution here!
     public static String pigLatin(String sentence) {
+        String word = sentence;
+        if(word.charAt(0) == 'a' || word.charAt(0) == 'u' ||word.charAt(0) == 'e' 
+        || word.charAt(0) == 'i' || word.charAt(0) == 'o'){
+            System.out.print(word);
+        }
+        else{
+            char first = word.charAt(0);
+            System.out.print(word.substring(1, word.length()) + first + "ay");
+        }
         return null;
     }
 

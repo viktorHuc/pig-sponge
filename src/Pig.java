@@ -32,12 +32,13 @@ public class Pig {
         String word = sentence;
         if(word.charAt(0) == 'a' || word.charAt(0) == 'u' ||word.charAt(0) == 'e' 
         || word.charAt(0) == 'i' || word.charAt(0) == 'o'){
-            output += word;
+            output += word + " ";
         }
         else{
             char first = word.charAt(0);
-            output += word.substring(1, word.length()) + first + "ay";
+            output += word.substring(1, word.length()) + first + "ay ";
         }
+        output = output.substring(0, output.length() - 1);
         return output;
     }
 

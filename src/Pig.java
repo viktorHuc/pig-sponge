@@ -29,7 +29,10 @@ public class Pig {
     // Implement your solution here!
     public static String pigLatin(String sentence) {
         String output = "";
+        String[] words = sentence.split(" ");
+        
         String word = sentence;
+
         if(word.charAt(0) == 'a' || word.charAt(0) == 'u' ||word.charAt(0) == 'e' 
         || word.charAt(0) == 'i' || word.charAt(0) == 'o'){
             output += word + " ";

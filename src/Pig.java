@@ -31,7 +31,7 @@ public class Pig {
         String output = "";
         String[] words = sentence.split(" ");
         for(String word : words){
-                if(word.charAt(0) == 'a' || word.charAt(0) == 'u' ||word.charAt(0) == 'e' 
+            if(word.charAt(0) == 'a' || word.charAt(0) == 'u' ||word.charAt(0) == 'e' 
             || word.charAt(0) == 'i' || word.charAt(0) == 'o'){
                 output += word + " ";
             }
